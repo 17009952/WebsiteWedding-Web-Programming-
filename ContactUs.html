@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="./CSS/ContactUs.css">
+        <link rel="stylesheet" href="./CSS/Nav.css">
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Tangerine);
+                  .typewriter h1 {
+                    color: rgb(255, 254, 253);
+                    font-family: 'Tangerine', serif;
+                    overflow: hidden; /* Ensures the content is not revealed until the animation */
+                    border-right: .15em solid orange; /* The typwriter cursor */
+                    white-space: nowrap; /* Keeps the content on a single line */
+                    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                    letter-spacing: .15em; /* Adjust as needed */
+                    font-size: 60px;
+                    padding-top: 2em;
+                    margin-left: 10%;
+                    animation: 
+                      typing 5.5s steps(40, end),
+                      blink-caret .5s step-end infinite;
+                  }
+                  
+
+                  /* The typing effect */
+                  @keyframes typing {
+                    from { width: 0 }
+                    to { width: 100% }
+                  }
+                  
+                  /* The typewriter cursor effect */
+                  @keyframes blink-caret {
+                    from, to { border-color: transparent }
+                    50% { border-color:transparent }
+                  }
+                  html{
+                    background: url("./Images/homepage.jpg");
+
+                /*	background-image:url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-
+
+                image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1479854258%2Fkahaluu-bay-
+
+                kona-big-island-hawaii-WRLDSNST1122.jpg%3Fitok%3DSFMX3uUf&w=800&q=85');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position:50% 50%;*/
+                }
+                #forms{
+                    margin-right:60px;
+                    margin-left: 60px;
+                    width: 500px;
+                    height: 800px;
+                    border-radius: 10px;
+                    margin-top: -10px;
+                    position: absolute;
+                    top: 100px;
+                    right: 10px;
+                    z-index: 99;
+                    color:#FFF;
+                }
+                #forms h2{
+                    background-color: rgba(15, 15, 15, 0.7);
+                    
+                    width:auto;
+                }
+                form{
+                    padding: 1em;
+                    width: 500px;
+                    border-radius: 1em;
+                    min-height:500px;
+                }
+                
+                form div+div{
+                    margin-top: 1em;
+                }
+
+                label{
+                    padding-left:50px;
+                    display: inline-block;
+                }
+                input,textarea{
+                    font:1em sans-serif;
+                    margin-left:50px;
+                    width: 400px;
+                }
+                  .list ul li{
+                      color: white;
+                      margin-left: 10%;
+                      font-size: 18px;
+                      font-style: bold;
+                  }
+
+                  .list{
+                      background-color: rgba(15, 15, 15, 0.7);
+                      width: 100%;
+                      height: 500px;
+                      padding: 3px;
+                  }
+                  h1{
+                      color:white;
+                  }
+                  p{
+                      padding-left: 12%;
+                      font-size: 20px;
+                      color:white;
+                  }
+                  button {
+                      z-index: 9995;
+                          display: block; /*Changed from inline-block to block. It allows the button to be put in the middle.*/
+                          border-radius: 4px;
+                          background-color: #f4511e;
+                          border: none;
+                          color: #FFFFFF;
+                          text-align: center;
+                          font-family: 'Times New Roman', Times, serif;
+                          font-style: italic bold;
+                          font-size: 18px;
+                          padding: 20px;
+                          width: 220px;
+                          cursor: pointer;
+                      box-shadow: 5px 5px 5px 5px #000000;
+                      margin: 0 auto;
+                      }
+        </style>
+    </head>
+    <body>
+        <nav class="mainnav">
+            <ul class="ulMenu">
+              <li><a href="Home.html">HOME</a></li>
+              <li class="dropdown">
+                <a href="WedPackage.html" class="dropbtn">PACKAGES</a>
+                <div class="dropdown-content">
+                  <a href="HomePackage.html">Home Wedding Package</a>
+                  <a href="SeaPackage.html">Beach Wedding Package</a>
+                  <a href="HillPackage.html">Hill Wedding Package</a>
+                  <a href="CityPackage.html">City Wedding Package</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="Services.html" class="dropbtn">OUR SERVICES</a>
+                <div class="dropdown-content">
+                  <a href="WeddingCakes.html">Wedding Cakes</a>
+                  <a href="CateringServices.html">Catering Services</a>
+                  <a href="FlowerArrangement.html">Flower Arrangement</a>
+                </div>
+              </li>
+              <li><a href="Gallery.html">GALLERY</a></li>
+              <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+              <li><a href="Booking.html">BOOKING</a></li>
+              <li><a href="ContactUs.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="typewriter">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="list">  
+            <ul>
+                <li><h1>Address</h1></li>
+                <p>5th Avenue Street,<br>
+                    24900 New York, America</p>
+                <li><h1>Phone</h1></li>
+                <p><b>Telephone:</b>: +1 234 5678<br>
+                    <b>Mobile/Whatsapp</b>: +1 12345 6789<br>
+                    <b>USA</b>: +0 (123) 456789</p>
+                <li><h1>E-mail</h1></li>
+                <p>enchantedweddings@email.com<br>
+                    &amp; include details about your day.
+
+                </p>
+            </ul>
+        </div>   
+        <div id="forms">
+                <form action="#" method="POST">  
+                    <h2 style="text-align:center;">Contact us directly by filling the<br> required fields on this form!</h2>
+                    <div>
+                        <label for="Name">Full name:</label>
+                        <br>
+                        <input type="text" id="Name" name="Name">
+                    </div>
+                    <div>
+                        <label for="Phone">Mobile:</label>
+                        <br>
+                        <input type="text" id="Phone" name="Phone">
+                    </div>
+                    <div>
+                        <label for="Email">Email:</label>
+                        <br>
+                        <input type="email" id="Email" name="Email">
+                    </div>
+                    <div>
+                        <label for="Location">Your Location:</label>
+                        <br>
+                        <input type="text" id="Location" name="Location">
+                    </div>
+                    <div>
+                        <label for="Style">Preferred Style:</label>
+                        <br>
+                        <input type="text" id="Style" name="Style">
+                    </div>
+                    <div>
+                        <label for="PrefVenue">Preferred Venue Type:</label>
+                        <br>
+                        <input type="text" id="PrefVenue" name="PrefVenue">
+                    </div>
+                    <div>
+                        <label for="Budget">Your Approximate Budget:</label>
+                        <br>
+                        <input type="number" id="Budget" name="Budget">
+                    </div>
+                    <div>
+                        <label for="remarks">Tell Us More:</label>
+                        <br>
+                        <textarea  id="Remarks" name="Remarks"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Submit Details!</button>
+                    </div>
+                </form>
+            </div>
+    </body>
+    </html>

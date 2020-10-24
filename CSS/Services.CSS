@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Work+Sans:400,500,700');
+.logo{
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 20px;
+}
+body{
+  background-image: url("../Images/home.jpg");
+}
+#container{
+width: auto;
+height: 100%;
+display: flex;
+margin-top: 105px;
+min-width: 1340px;
+}
+#WeddingCakes{
+width: 70%;
+height: 600px;
+background-image: url("../Images/cakepackage.jpg");
+background-size:100%; /*Needed because the photo is high quality.*/
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+#CateringServices{
+width: 70%;
+height: 600px;
+background-image: url("../Images/cateringpackage.jpg");
+background-size:100%; /*Needed because the photo is high quality.*/
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+#FlowerArrangement{
+width: 70%;
+height: 600px;
+background-image: url("../Images/flowerpackage.jpg");
+background-size:100%; /*Needed because the photo is high quality.*/
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+
+li{
+  font-size: 16px;
+}
+h6{color:white;
+  text-align: center;
+  margin-top: 100px; /*Changed top and bottom from 50%*/
+  margin-bottom: 100px; /*to ensure that the button doesn't move up and down when browser size changes*/
+  text-shadow: 4px 2px 2px #000000;
+}
+
+.button {
+  z-index: 9995;
+	display: block; /*Changed from inline-block to block. It allows the button to be put in the middle.*/
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic bold;
+	font-size: 18px;
+	padding: 20px;
+	width: 220px;
+	transition: all 0.5s;
+	cursor: pointer;
+  box-shadow: 5px 5px 5px 5px #000000;
+  margin: 0 auto;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    
+    .button:hover span {
+    padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }

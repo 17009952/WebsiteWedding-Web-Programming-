@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="./CSS/Nav.css">
+	<title>Wedding Packages</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Work+Sans:400,500,700');
+.logo{
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 20px;
+}
+body{
+  background-image: url("./Images/home.jpg");
+}
+#container{
+width: auto;
+height: 100%;
+display: flex;
+margin-top: 105px;
+min-width: 1340px;
+}
+#HomeWedding{
+width: 70%;
+height: 600px;
+background-image: url("./Images/Home wedding.jpg");
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+#SeaWedding{
+width: 70%;
+height: 600px;
+background-image: url("./Images/Sea.jpg");
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+#HillWedding{
+width: 70%;
+height: 600px;
+background-image: url("./Images/Hill.jpg");
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+#CityWedding{
+width: 70%;
+height: 600px;
+background-image: url("./Images/City.jpg");
+margin: 12px;
+box-sizing: border-box;
+font-size: 50px;
+text-align: left;
+display: inline-block;
+vertical-align: baseline;
+border-style: double;
+}
+.ulhome{
+  font-weight: bold;
+  font-family: Work Sans, sans-serif;
+  padding-top: 8px;
+}
+.ulsea{
+  font-weight: bold;
+  font-family: Work Sans, sans-serif;
+  padding-top: 8px;
+}
+.ulhill{
+  font-weight: bold;
+  font-family: Work Sans, sans-serif;
+  padding-top: 8px;
+}
+.ulcity{
+  font-weight: bold;
+  font-family: Work Sans, sans-serif;
+  padding-top: 8px;
+}
+li{
+  font-size: 16px;
+}
+h6{color:white;
+  text-align: center;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  text-shadow: 4px 2px 2px #000000;
+}
+
+.button {
+  z-index: 9995;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic bold;
+	font-size: 18px;
+	padding: 20px;
+	width: 220px;
+	transition: all 0.5s;
+	cursor: pointer;
+  box-shadow: 5px 5px 5px 5px #000000;
+  margin-left: 12%;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    
+    .button:hover span {
+    padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+    footer{
+      background-color: rgba(8, 8, 8, 0.9);
+      width: 100%;
+    }
+    small{
+      color:white;
+      padding: 5px;
+    }
+</style>
+  </head>
+  <body>
+	<nav class="mainnav">
+		<ul class="ulMenu">
+		  <li><a href="Home.html">HOME</a></li>
+		  <li class="dropdown">
+			<a href="WedPackage.html" class="dropbtn">PACKAGES</a>
+			<div class="dropdown-content">
+			  <a href="HomePackage.html">Home Wedding Package</a>
+			  <a href="SeaPackage.html">Beach Wedding Package</a>
+			  <a href="HillPackage.html">Hill Wedding Package</a>
+			  <a href="CityPackage.html">City Wedding Package</a>
+			</div>
+		  </li>
+		  <li class="dropdown">
+			<a href="Services.html" class="dropbtn">OUR SERVICES</a>
+			<div class="dropdown-content">
+			  <a href="WeddingCakes.html">Wedding Cakes</a>
+			  <a href="CateringServices.html">Catering Services</a>
+			  <a href="FlowerArrangement.html">Flower Arrangement</a>
+			</div>
+		  </li>
+		  <li><a href="Gallery.html">GALLERY</a></li>
+      <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+      <li><a href="Booking.html">BOOKING</a></li>
+		  <li><a href="ContactUs.html">CONTACT</a></li>
+		</ul>
+	</nav>
+    <div id="container">
+  <div id="HomeWedding">
+	<h6>HOME WEDDING PACKAGE<span><h7 style="font-style: italic"><br><br>Home Sweet Home</h7></span></h6>
+	<a href="HomePackage.html"><button class="button" style="vertical-align:middle"><span>Home Package</span></button></a>
+	</div>
+  <div id="SeaWedding">
+	  <h6>SEA WEDDING PACKAGE<span><h7 style="font-style: italic"><br><br>The Deepest Love</h7></span></h6>
+	  <a href="SeaPackage.html"><button class="button" style="vertical-align:middle"><span>Sea Package</span></button></a>  	
+	</div>
+	<div id="HillWedding">
+		<h6>HILL WEDDING PACKAGE<span><h7 style="font-style: italic"><br><br>Greater Heights</h7></span></h6>
+		<a href="HillPackage.html"><button class="button" style="vertical-align:middle"><span>Hill Package</span></button></a>
+  	</div>
+  	<div id="CityWedding">
+		  <h6>CITY WEDDING PACKAGE<span><h7 style="font-style: italic"><br><br>Future Is Ours</h7></span></h6>
+		  <a href="CityPackage.html"><button class="button" style="vertical-align:middle"><span>City Package</span></button></a>
+    </div>
+</div>
+<footer>
+ <small><i>Copyright &copy;Enchanted Weddings</i><br></small>
+ <small>Date Published: 5/7/2019<br></small>
+ <small>Contact us:- <br>
+	Telephone:: +1 234 5678 <br>
+	Mobile/Whatsapp: +1 12345 6789 <br>
+	USA: +0 (123) 456789
+ </small>
+</footer>
+</body>
+</html> 
+

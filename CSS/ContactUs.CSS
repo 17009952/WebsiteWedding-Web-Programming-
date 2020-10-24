@@ -1,0 +1,50 @@
+html{
+	background: url("../Images/homepage.jpg");
+
+/*	background-image:url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-
+
+image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1479854258%2Fkahaluu-bay-
+
+kona-big-island-hawaii-WRLDSNST1122.jpg%3Fitok%3DSFMX3uUf&w=800&q=85');
+	background-repeat: no-repeat;
+    background-size: 100%;
+	background-position:50% 50%;*/
+}
+#forms{
+	margin-right:60px;
+	margin-left: 60px;
+	width: 500px;
+	height: 800px;
+	border-radius: 10px;
+	margin-top: -10px;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	z-index: 99;
+	color:#FFF;
+}
+#forms h2{
+	background-color: rgba(15, 15, 15, 0.7);
+	
+	width:auto;
+}
+form{
+	  padding: 1em;
+	  width: 500px;
+	  border-radius: 1em;
+	  min-height:500px;
+  }
+  
+form div+div{
+	margin-top: 1em;
+}
+
+label{
+	padding-left:50px;
+	display: inline-block;
+}
+input,textarea{
+	font:1em sans-serif;
+	margin-left:50px;
+	width: 400px;
+}

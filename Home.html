@@ -1,0 +1,348 @@
+<html>
+     <head>
+            <meta charset="utf-8">
+                <link rel="stylesheet" href="./CSS/Home.css">
+                <link rel="stylesheet" href="./CSS/Nav.css">
+                <link rel="stylesheet" href="./CSS/Button.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <style>
+                    html{
+                      background: url("./Images/homepage.jpg");
+                    }
+
+                    body{
+                      overflow: hidden;
+                    }
+
+                      div h1{
+                        font-family: 'Times New Roman', Times, serif;
+                        color: white;
+                        font-style: italic;
+                        margin-top: 180px;
+                        position: absolute;
+                        margin-left: 37%;
+                        margin-right: 50%;
+                        padding: 20px;
+                        font-size: 70px;
+                        text-shadow: 2px 2px 4px #000000;
+                      }
+
+                      .blackblock{
+                        position: relative;
+                        background-color: rgba(8,8,8, 0.9);
+                        width: 100%;
+                        height: 350px;
+                        margin-top: 90px;
+                      }
+
+                      .whiteblock{
+                      position: relative;
+                      background-color: white;
+                      width: 100%;
+                      height: 300px;
+                      margin-top: 90px;
+                      }
+
+                      .button {
+                      display: inline-block;
+                      border-radius: 4px;
+                      background-color: #f4511e;
+                      border: none;
+                      color: #FFFFFF;
+                      text-align: center;
+                      font-family: 'Times New Roman', Times, serif;
+                      font-style: italic bold;
+                      font-size: 18px;
+                      padding: 20px;
+                      width: 220px;
+                      transition: all 0.5s;
+                      cursor: pointer;
+                      margin-top: 430px;
+                      margin-left: 43%;
+                      margin-right: 50%;
+                      box-shadow: 5px 5px 5px 5px #000000;
+                      }
+                      
+                      .button span {
+                      cursor: pointer;
+                      display: inline-block;
+                      position: relative;
+                      transition: 0.5s;
+                      }
+                      
+                      .button span:after {
+                      content: '\00bb';
+                      position: absolute;
+                      opacity: 0;
+                      top: 0;
+                      right: -20px;
+                      transition: 0.5s;
+                      }
+                      
+                      .button:hover span {
+                      padding-right: 25px;
+                      }
+                      
+                      .button:hover span:after {
+                      opacity: 1;
+                      right: 0;
+                      }
+
+                    div h3{
+                      text-align: center;
+                      padding-top: 15px;
+                      font-size: 30px;
+                      font-style: italic;
+                      color:	#DAA520;
+                    }
+
+                    .imgwelcome{
+                    display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      height:80px;
+                    }
+
+                    .welcome {
+                      font-family: 'Times New Roman', Times, serif;
+                      font-style: bold;
+                      color: white;
+                      margin-left: auto;
+                      margin-right: auto;
+                      text-align: center;
+                      font-size: 50px;
+                      }
+
+                      .wlcmsg{
+                      font-family: 'Times New Roman', Times, serif;
+                      font-style: bold;
+                      color: white;
+                      margin-left: auto;
+                      margin-right: auto;
+                      font-size: 20px;
+                      padding: 50px;
+                      }
+
+                    div p{
+                      background-color: rgba(255,255,255, 0.9);
+                      width: 1920px;
+                      z-index: 0;
+                    }
+
+                    @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+                    .item-1, 
+                    .item-2, 
+                    .item-3 {
+                      
+                      position: absolute;
+                        display: block;
+                      top: 2em;
+                      
+                        width: 60%;
+                      
+                        font-size: 20px;
+
+                      animation-duration: 20s;
+                      animation-timing-function: ease-in-out;
+                        animation-iteration-count: infinite;
+                      
+                      margin-top:1400px;
+                      margin-bottom: 60px;
+                      font-family: 'Playfair Display', serif;
+                    }
+
+                    .item-1{
+                      animation-name: anim-1;
+                    }
+
+                    .item-2{
+                      animation-name: anim-2;
+                    }
+
+                    .item-3{
+                      animation-name: anim-3;
+                    }
+
+                    @keyframes anim-1 {
+                      0%, 8.3% { left: -100%; opacity: 0; }
+                      8.3%,25% { left: 25%; opacity: 1; }
+                      33.33%, 100% { left: 110%; opacity: 0; }
+                    }
+
+                    @keyframes anim-2 {
+                      0%, 33.33% { left: -100%; opacity: 0; }
+                      41.63%, 58.29% { left: 25%; opacity: 1; }
+                      66.66%, 100% { left: 110%; opacity: 0; }
+                    }
+
+                    @keyframes anim-3 {
+                      0%, 66.66% { left: -100%; opacity: 0; }
+                      74.96%, 91.62% { left: 25%; opacity: 1; }
+                      100% { left: 110%; opacity: 0; }
+                    }
+
+                    .testimonial{
+                      padding-top: 8px;
+                      font-family: 'Playfair Display', serif;
+                      text-align: center;
+                      text-shadow: 2px 2px 4px #000000;
+                      font-size: 40px;
+                    }
+
+
+                    .logo{
+                      position: absolute;
+                      top: 8px;
+                      left: 16px;
+                      margin-top: 15px;
+                      z-index:9996;
+		                  min-width: 200px;
+		                  max-width: 300px;
+                    }
+                    .wrapper{
+                      
+                        margin-top: 90px;
+                        font-family: 'Times New Roman', Times, serif;
+                        width: 100%;
+                        position: relative;
+                        background: white;
+                        background-repeat: repeat-x;
+
+                    }
+
+                    .packagetext{
+                      font-family: 'Times New Roman', Times, serif;
+                      font-style: italic;
+                      color: white;
+                      position: absolute;
+                      margin-top: -300px;
+                      z-index: 9997;
+                      font-size: 45px;
+                      padding-left: 37%;
+                      text-shadow: 2px 2px 4px #353333;
+                      
+                    }
+
+                    .centered {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                              }
+
+                    .imghover{
+                        opacity: 1;
+                        width: 100%;
+                        display: block;
+                        height: auto;
+                        transition: .5s ease;
+                            }
+                            .content{
+                                position: absolute;
+                                top: 45%;
+                                left: 45%;
+                                transform: translate(-50%,-50%);
+                                -ms-transform: translate(-50%,-50%);
+                                text-transform: uppercase;
+                                font-size: 60px;
+                                color: rgb(54, 53, 53);
+                                white-space: nowrap;
+                                overflow: hidden;
+                                margin-left: 80px;
+                                z-index: 9998;
+                            }
+                            .content a{
+              font-size: 24px;
+              display: block;
+              background-color:#f4511e;
+              text-align: center;
+              padding: 10px;
+              cursor: pointer; 
+            }
+            
+            .overlay{
+              opacity: 0;
+            }
+            
+            .wrapper:hover img{
+              opacity: .5;
+            }
+            
+            .wrapper:hover .overlay{
+              opacity: 1;
+            }
+
+        
+                </style>
+                <title>Home</title>
+              </head>
+              <body>
+                  <img src="./Images/logo.png" class="logo"></img>
+                  <nav class="mainnav">
+                      <ul class="ulMenu">
+                        <li><a href="Home.html">HOME</a></li>
+                        <li class="dropdown">
+                          <a href="WedPackage.html" class="dropbtn">PACKAGES</a>
+                          <div class="dropdown-content">
+                            <a href="HomePackage.html">Home Wedding Package</a>
+                            <a href="SeaPackage.html">Beach Wedding Package</a>
+                            <a href="HillPackage.html">Hill Wedding Package</a>
+                            <a href="CityPackage.html">City Wedding Package</a>
+                          </div>
+                        </li>
+                        <li class="dropdown">
+                          <a href="Services.html" class="dropbtn">OUR SERVICES</a>
+                          <div class="dropdown-content">
+                            <a href="WeddingCakes.html">Wedding Cakes</a>
+                            <a href="CateringServices.html">Catering Services</a>
+                            <a href="FlowerArrangement.html">Flower Arrangement</a>
+                          </div>
+                        </li>
+                        <li><a href="Gallery.html">GALLERY</a></li>
+                        <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+                        <li><a href="Booking.html">BOOKING</a></li>
+                        <li><a href="ContactUs.html">CONTACT</a></li>
+                      </ul>
+                  </nav>
+                  <div class="w3-container w3-center w3-animate-zoom">
+                      <h1>Enchanted <br> Weddings <br> </h1>
+                  </div>
+                  <a href="WedPackage.html"><button class="button" style="vertical-align:middle"><span>Begin Your Journey</span></button></a>                  <div class="blackblock">
+                      <link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Lobster">
+                      <h2 class="welcome">Welcome</h2>
+                      <h4 class="wlcmsg">Enchanted Weddings is a dynamic bunch of misfit dynamos; a team of experienced planners, coordinators and decorators 
+                        who have the knowledge and know-how to guide you through the myriad of choices that need to be made for your event.
+                        Whether it be to plan your wedding reception, proposal, milestone celebration and/or corporate gala dinners; our passion for perfection
+                         coupled with years of experience allows us to focus on the smallest details that demand the fullest attention and translation your big day into one that is yours truly.</h4>
+                  </div>
+                  <div class="wrapper">
+                      <img src="Images/homepckg.png" class="imghover">
+                      <div class="overlay">
+                          <div class="content">
+                              Wedding Packages<a href="WedPackage.html">View Our Options</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="whiteblock">
+                    <a href="Testimonials.html"><h2 class="testimonial">TESTIMONIALS</h2></a>
+                  </div>
+                  <p class="item-1">We hired Enchanted Weddings for our wedding day coordination, but what we got was so much
+                     more help planning before the actual day. We spent a lot of time perfecting the schedule, and making
+                      sure everything was perfect, and it really was the perfect day…. from beginning to end. Our head 
+                      coordinator Carly was exactly the person I was looking for. I wanted someone who could take charge 
+                      during a stressful situation and get THINGS DONE like a boss. - Jessica & Anthony</p>
+
+                  <p class="item-2">“The professionalism and combined experience of the entire team made our reception
+                     as enjoyable & stress-free as a wedding can be. We are happy to have them as a part of our memories 
+                     of an absolutely perfect wedding day!”-Brian & Mary</p>
+                  
+                  <p class="item-3">"You did a wonderful job for us and I am very grateful for the expert input you provided
+                    in advance of the big day. We had a wonderful day and that is in no small part to your work. Enchanted Weddings
+                    offers terrific services. 
+ood, lighting and indeed everything was from the very top drawer. You are an ‘Event Designer Extraordinaire’" - 
+                    Chris McGill</p>
+        </body>
+</html>

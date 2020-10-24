@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Nav.css">
+	<link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<style>
+.gallery{
+  position: relative;
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 20px;
+  margin-bottom:20px;
+}
+
+.gallery:hover .image {
+  opacity: 0.3;
+  border-radius: 50%;
+  transform:scale(1.1);
+}
+
+.gallery:hover .middle {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-style: solid;
+  border-width: thick;
+  border-color: white;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.text {
+  background-color: #FF82AB;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+
+}
+
+</style>
+<body background="Images/home.jpg">
+	<nav class="mainnav">
+		<ul class="ulMenu">
+		  <li><a href="Home.html">HOME</a></li>
+		  <li class="dropdown">
+			<a href="WedPackage.html" class="dropbtn">PACKAGES</a>
+			<div class="dropdown-content">
+			  <a href="HomePackage.html">Home Wedding Package</a>
+			  <a href="SeaPackage.html">Beach Wedding Package</a>
+			  <a href="HillPackage.html">Hill Wedding Package</a>
+			  <a href="CityPackage.html">City Wedding Package</a>
+			</div>
+		  </li>
+		  <li class="dropdown">
+			<a href="Services.html" class="dropbtn">OUR SERVICES</a>
+			<div class="dropdown-content">
+			  <a href="WeddingCakes.html">Wedding Cakes</a>
+			  <a href="CateringServices.html">Catering Services</a>
+			  <a href="FlowerArrangement.html">Flower Arrangement</a>
+			</div>
+		  </li>
+		  <li><a href="Gallery.html">GALLERY</a></li>
+		  <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+		  <li><a href="Booking.html">BOOKING</a></li>
+		  <li><a href="ContactUs.html">CONTACT</a></li>
+		</ul>
+	</nav>
+
+<h1>Gallery</h1>
+	<div class="gallery">
+		<a href="bw.html" ><img src="Images/bw5.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Beach Wedding</div>
+	</div>
+</div>
+	<div class="gallery">
+		<a href="hw.html" ><img src="Images/hw1.jpg" class="image"></a>
+		<div class="middle">
+		<div class="text">Home Wedding</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="cw.html" ><img src="Images/cw2.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">City Wedding</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="mv.html" ><img src="Images/mw5.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Mountain Wedding</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="cc.html" ><img src="Images/cc11.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Chinese Catering</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="ic.html" ><img src="Images/ic6.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Indian Catering</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="mc.html" ><img src="Images/mc7.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Malay Catering</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="wc.html" ><img src="Images/wc11.jpeg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Western Catering</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="cake.html" ><img src="Images/c32.jpg" class="image" ></a>
+		<div class="middle">
+		<div class="text">Wedding Cake</div>
+	</div>
+</div>
+<div class="gallery">
+		<a href="Images/f21.jpg"><img src="Images/f2.jpg" class="image"></a>
+		<div class="middle">
+		<div class="text">Flower Decoration</div>
+	</div>
+</div>
+</body>
+</html>

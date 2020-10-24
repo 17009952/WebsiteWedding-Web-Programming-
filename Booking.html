@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./CSS/Booking.css">
+<link rel="icon" href="images/favicon.ico">
+<style>
+input[type="text"]{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
+input[type="tel"]{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
+input[type="radio"]{
+	width: 10%;
+	margin: 8px 0;
+	box-sizing: border-box;
+} 
+input[type="email"]{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
+input[type="date"]{
+  width: 25%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} 
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+</style>
+<title>Booking</title>
+</head>
+<body>
+    <nav class="mainnav">
+        <ul class="ulMenu">
+          <li><a href="Home.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="WedPackage.html" class="dropbtn">PACKAGES</a>
+            <div class="dropdown-content">
+              <a href="HomePackage.html">Home Wedding Package</a>
+              <a href="SeaPackage.html">Beach Wedding Package</a>
+              <a href="HillPackage.html">Hill Wedding Package</a>
+              <a href="CityPackage.html">City Wedding Package</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="Services.html" class="dropbtn">OUR SERVICES</a>
+            <div class="dropdown-content">
+              <a href="WeddingCakes.html">Wedding Cakes</a>
+              <a href="CateringServices.html">Catering Services</a>
+              <a href="FlowerArrangement.html">Flower Arrangement</a>
+            </div>
+          </li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="Booking.html">BOOKING</a></li>
+          <li><a href="ContactUs.html">CONTACT</a></li>
+        </ul>
+    </nav>
+<div id="container">
+<form action="insert_data.php" method="post">
+    <table>
+        <tr>
+            <td>
+                <b>Full name:</b>
+            </td>
+            <td>
+                <input type="text" id="name" name="fullname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Contact number:</b>
+            </td>
+            <td>
+                <input type="tel" id="tel" name="user_tel">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>E-mail:</b>
+            </td>
+            <td>
+                <input type="email" id="mail" name="user_mail">
+            </td>
+        </tr>
+        <tr>
+            <td>
+				<b>Package:</b>
+            </td>
+			<td>
+			<select name="Package">
+					<option>Home Wedding Package</option>
+					<option>Beach Wedding Package</option>
+					<option>Mountain/Hillside Wedding Package</option>
+					<option>City Wedding Package</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+            <td>
+				<b>Catering:</b>
+            </td>
+            <td>
+                <input type="radio" name="food" value="Chinese Food"><b>Chinese Food</b>
+                <input type="radio" name="food" value="Malay Food"><b>Malay Food</b>
+                <input type="radio" name="food" value="Indian Food"><b>Indian Food</b>
+				<input type="radio" name="food" value="Western Food"><b>Western Food</b>
+            </td>
+		</tr>
+		</tr>
+		<tr>
+            <td>
+				<b>Cake:</b>
+            </td>
+            <td>
+                <input type="radio" name="cake" value="1-tier"><b>1-tier</b>
+                <input type="radio" name="cake" value="2-tier"><b>2-tier</b>
+                <input type="radio" name="cake" value="3-tier"><b>3-tier</b>
+            </td>
+		</tr>
+		</tr>
+			</tr>
+		    <tr>
+            <td>
+				<b>Flower:</b>
+            </td>
+            <td>
+                <input type="radio" name="Flower" value="Large package"><b>Large package</b>
+                <input type="radio" name="Flower" value="Medium package"><b>Medium package</b><br>
+                <input type="radio" name="Flower" value="Small package"><b>Small package</b>
+            </td>
+		</tr>
+		</tr>
+			</tr>
+		    <tr>
+            <td>
+				<b>Preferred Style:</b>
+            </td>
+            <td>
+			<select name="PS">
+					<option>Elegant/Chic</option>
+					<option>Cheerful/Colourful</option>
+					<option>Minimal</option>
+			</select>
+            </td>
+		</tr>
+		</tr>
+			<tr>
+			<td>
+				<b>Preferred Date:</b>
+			</td>
+			<td>
+				<input type="date" name="PD">
+			</td>
+		</tr>
+        <tr>
+            <td>
+                <b>Tell us more:</b>
+            </td>
+            <td>
+                <textarea id="msg" name="user_message"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <class="button">
+            </td>
+            <td>
+                <button onclick="myFunction()">Submit</button>
+				<script>
+					function myFunction(){
+					alert("Thank you for choosing Enchanted Weddings and we will contact you soon!");}
+				</script>
+            </td>
+        </tr>
+</form>
+</div>
+</body>
+</html>

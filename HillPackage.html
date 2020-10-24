@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hill Package</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="./CSS/Nav.css">
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Tangerine);
+
+                html{
+                    background-image: url("Images/Hill.jpg");
+                }
+                
+                  
+                  .typewriter h1 {
+                    color: rgb(121, 121, 116);
+                    font-family: 'Tangerine', serif;
+                    overflow: hidden; /* Ensures the content is not revealed until the animation */
+                    border-right: .15em solid orange; /* The typwriter cursor */
+                    white-space: nowrap; /* Keeps the content on a single line */
+                    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                    letter-spacing: .15em; /* Adjust as needed */
+                    font-size: 80px;
+                    padding-top: 2em;
+                    margin-left: 61%;
+                    animation: 
+                      typing 5.5s steps(40, end),
+                      blink-caret .5s step-end infinite;
+                  }
+
+                  /* The typing effect */
+                  @keyframes typing {
+                    from { width: 0 }
+                    to { width: 100% }
+                  }
+                  
+                  /* The typewriter cursor effect */
+                  @keyframes blink-caret {
+                    from, to { border-color: transparent }
+                    50% { border-color:transparent }
+                  }
+
+                  .list ul li{
+                      color: white;
+                      margin-left: 60%;
+                      padding: 5px;
+                      font-size: 28px;
+                      font-style: bold;
+                  }
+
+                  .list{
+                      background-color: rgba(15, 15, 15, 0.7);
+                      width: 100%;
+                      padding: 3px;
+                  }
+
+                  .image img{
+                      margin-left: 60px;
+                      width: 500px;
+                      margin-top: -10px;
+                      position: fixed;
+                      top: 5px;
+                      left: 10px;
+                      z-index: 99;
+                      transition: transform .2s;
+                  }
+
+                  img:hover{
+                    transform: scale(1.1);
+                  }
+
+                  .ampersand{
+                    display: inline-block;
+                  }
+                  .button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic bold;
+	font-size: 18px;
+	padding: 20px;
+	width: 220px;
+	transition: all 0.5s;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px 5px #000000;
+  }
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+        </style>
+    </head>
+    <body>
+      <nav class="mainnav">
+        <ul class="ulMenu">
+          <li><a href="Home.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="WedPackage.html" class="dropbtn">PACKAGES</a>
+            <div class="dropdown-content">
+              <a href="HomePackage.html">Home Wedding Package</a>
+              <a href="SeaPackage.html">Beach Wedding Package</a>
+              <a href="HillPackage.html">Hill Wedding Package</a>
+              <a href="CityPackage.html">City Wedding Package</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="Services.html" class="dropbtn">OUR SERVICES</a>
+            <div class="dropdown-content">
+              <a href="WeddingCakes.html">Wedding Cakes</a>
+              <a href="CateringServices.html">Catering Services</a>
+              <a href="FlowerArrangement.html">Flower Arrangement</a>
+            </div>
+          </li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="Booking.html">BOOKING</a></li>
+          <li><a href="ContactUs.html">CONTACT</a></li>
+        </ul>
+    </nav>
+        <div class="typewriter">
+            <h1>Hill Package</h1>
+        </div>
+        <div class="list">
+            <ul class="listitems">
+                <li>All of HOME PACKAGE included</li>
+                <li class="ampersand">&</li>
+                <li>Personalised 2-tier wedding cake</li>
+                <li>Private location with garden view</li>   
+                <li><a href="Booking.html"><button class="button" style="vertical-align:middle"><span>I'm ready to book!</span></button></a></li>
+        </div>    
+        <div class="image">
+          <a href="mv.html"><img src="Images/hillpackage.jpg"></a>
+        </div>
+    </body>
+    </html>
